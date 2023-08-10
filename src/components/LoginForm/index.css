@@ -1,0 +1,126 @@
+.login-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 80px 20px 50px 30px;
+}
+@media screen and (min-width: 768px) {
+  .login-form-container {
+    flex-direction: row;
+    padding: 100px 80px 70px 60px;
+  }
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+@media screen and (min-width: 768px) {
+  .image-container {
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.login-website-logo-mobile-image {
+  width: 150px;
+  height: 80px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .login-website-logo-mobile-image {
+    display: none;
+  }
+}
+
+.login-image {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .login-image {
+    width: 100%;
+    height: 360px;
+    padding: 20px 80px 20px 70px;
+  }
+}
+
+.login-website-logo-desktop-image {
+  width: 150px;
+  height: 80px;
+  margin-bottom: 0px;
+}
+@media screen and (max-width: 768px) {
+  .login-website-logo-desktop-image {
+    display: none;
+  }
+}
+
+.login-container {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .login-container {
+    width: 40%;
+    margin-top: 0px;
+    box-shadow: 0px 4px 16px 0px #bfbfbf;
+  }
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.label-text {
+  font: bold 16px Georgia, roboto;
+  line-height: 16px;
+  color: #475569;
+}
+
+.user-input {
+  border: 1px solid #d7dfe9;
+  background-color: #e2e8f0;
+  font-size: 18px;
+  height: 40px;
+  color: #64748b;
+  border-radius: 2px;
+  margin-top: 5px;
+  padding: 8px 16px 8px 16px;
+  min-width: 200px;
+}
+
+.login-button {
+  font: bold 14px Georgia, roboto;
+  color: #fff;
+  background-color: #0b69ff;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  height: 40px;
+  width: 80%;
+  margin-top: 30px;
+  text-align: center;
+  align-self: center;
+}
