@@ -42,7 +42,7 @@ class LoginForm extends Component {
 
   submitSuccess = () => {
     const {history} = this.props
-    history.replace('/')
+    history.replace('/Home')
   }
 
   renderUserName = () => {

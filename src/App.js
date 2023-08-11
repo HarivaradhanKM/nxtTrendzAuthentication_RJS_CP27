@@ -11,8 +11,8 @@ class App extends Component {
       <div className="app-container">
         <div className="body-section">
           <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/login" component={LoginForm} />
+            <Route exact path="/" component={LoginForm} />
+            <Route exact path="/Home" component={Home} />
             <Route component={NotFound} />
           </Switch>
         </div>
