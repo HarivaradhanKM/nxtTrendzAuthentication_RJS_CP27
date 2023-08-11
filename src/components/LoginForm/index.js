@@ -50,7 +50,7 @@ class LoginForm extends Component {
     return (
       <>
         <label htmlFor="username" className="label-text">
-          Username
+          USERNAME
         </label>
         <input
           type="text"
@@ -69,7 +69,7 @@ class LoginForm extends Component {
     return (
       <>
         <label htmlFor="password" className="label-text">
-          Password
+          PASSWORD
         </label>
         <input
           type="password"
@@ -98,21 +98,23 @@ class LoginForm extends Component {
             alt="website login"
             src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-login-img.png "
           />
-          <img
-            className="login-website-logo-desktop-image"
-            alt="website logo"
-            src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-logo-img.png"
-          />
-          <form className="form-container" onClick={this.submitForm}>
-            <div className="input-container"> {this.renderUserName()}</div>
-            <div className="input-container"> {this.renderPassword()}</div>
-            <button type="submit" className="login-button">
-              Login
-            </button>
-            {showErrorMessage && (
-              <p className="error-message">*{errorMessage}</p>
-            )}
-          </form>
+          <div className="login-website-logo-desktop">
+            <img
+              className="login-website-logo-desktop-image"
+              alt="website logo"
+              src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-logo-img.png"
+            />
+            <form className="form-container" onClick={this.submitForm}>
+              <div className="input-container"> {this.renderUserName()}</div>
+              <div className="input-container"> {this.renderPassword()}</div>
+              <button type="submit" className="login-button">
+                Login
+              </button>
+              {showErrorMessage && (
+                <p className="error-message">*{errorMessage}</p>
+              )}
+            </form>
+          </div>
         </div>
       </div>
     )

@@ -8,7 +8,7 @@
 }
 @media screen and (min-width: 768px) {
   .login-form-container {
-    flex-direction: row;
+    flex-direction: column;
     padding: 100px 80px 70px 60px;
   }
 }
@@ -23,6 +23,7 @@
 @media screen and (min-width: 768px) {
   .image-container {
     width: 60%;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
   }
@@ -33,7 +34,7 @@
   height: 80px;
   margin-bottom: 30px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .login-website-logo-mobile-image {
     display: none;
   }
@@ -50,9 +51,20 @@
   }
 }
 
+.login-website-logo-desktop {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 10px 0px #bfbfbf;
+  padding: 60px;
+  border-radius: 10px;
+}
+
 .login-website-logo-desktop-image {
   width: 150px;
-  height: 80px;
+  height: 50px;
   margin-bottom: 0px;
 }
 @media screen and (max-width: 768px) {
@@ -82,21 +94,23 @@
 .form-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: Left;
+  align-items: Left;
+  text-align: left;
 }
 
 .input-container {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
+  margin-bottom: 10px;
   width: 100%;
 }
 
 .label-text {
-  font: bold 16px Georgia, roboto;
-  line-height: 16px;
+  font: bold 16px/16px Georgia, roboto;
   color: #475569;
+  margin-bottom: 3px;
 }
 
 .user-input {
@@ -119,8 +133,12 @@
   border: none;
   cursor: pointer;
   height: 40px;
-  width: 80%;
+  width: 100%;
   margin-top: 30px;
   text-align: center;
   align-self: center;
+}
+
+.error-message {
+    color: #ff0b37;
 }
